@@ -10,6 +10,12 @@ function Form() {
     const [name, setName] = useState()
     const [password, setPassword] = useState()
 
+    function addCart() {
+        setValor(valor + 1)
+    }
+
+    const [valor, setValor] = useState(0)
+
     return(
         <>
         <h1>Meu Cadastro</h1>
@@ -26,6 +32,10 @@ function Form() {
                 <input type="submit" value = "Cadastrar"/>
             </div>
         </form>
+        { /* testando masi useState*/ }
+        <div>Quantidade de produtos no carrinho: <b>{valor}</b></div>
+        <button onClick={addCart}>Adicionar +1 no carrinho</button>
+
         </>
     )
 }
