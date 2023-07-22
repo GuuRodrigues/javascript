@@ -1,1 +1,0 @@
-console.log('esse é o script linkado no body')
